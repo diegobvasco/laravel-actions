@@ -62,7 +62,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DiegoVasconcelos\\Actions\\LaravelActionsServiceProvider"
+                "DiegoVasconcelos\\Actions\\ActionsServiceProvider"
             ],
             "aliases": {
                 "Actions": "DiegoVasconcelos\\Actions\\Facades\\Actions"
