@@ -34,8 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DiegoVasconcelos\\Actions\\": "src/",
-            "DiegoVasconcelos\\Actions\\Database\\Factories\\": "database/factories/"
+            "DiegoVasconcelos\\Actions\\": "src/"
         }
     },
     "autoload-dev": {
