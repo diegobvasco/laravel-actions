@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.1](https://github.com/diegobvasco/laravel-actions/compare/v1.0.0...v1.0.1) (2026-06-28)
+
+
+### Miscellaneous Chores
+
+* add support for laravel 13, adjust composer script commands and install rector ([2ae0f0f](https://github.com/diegobvasco/laravel-actions/commit/2ae0f0f3b9c349a81f798d1225a4aff67f54a846))
+* run lint ([697521b](https://github.com/diegobvasco/laravel-actions/commit/697521bd5162a37e2f0dd37142385f6df59a1fc4))
+
+## Changelog
+
 All notable changes to `laravel-actions` will be documented in this file.
 
 ## Initial Release – v1.0.0 - 2026-01-06
