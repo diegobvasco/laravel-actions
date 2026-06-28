@@ -29,7 +29,7 @@ class MakeActionCommand extends GeneratorCommand
         return $this->resolveStubPath('/stubs/action.stub');
     }
 
-    protected function resolveStubPath($stub): string
+    protected function resolveStubPath(string $stub): string
     {
         return file_exists($customPath = $this->laravel->basePath(trim($stub, '/')))
             ? $customPath

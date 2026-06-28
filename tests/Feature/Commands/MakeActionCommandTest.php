@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-afterEach(function () {
+afterEach(function (): void {
     File::deleteDirectory(app_path('Actions'));
     File::deleteDirectory(base_path('tests/Feature/Actions'));
 });
 
-it('creates action in nested path', function () {
+it('creates action in nested path', function (): void {
     $this->artisan('make:action Path/NameAction')
         ->assertSuccessful();
 
@@ -25,7 +25,7 @@ it('creates action in nested path', function () {
         ->toContain('namespace App\\Actions\\Path');
 });
 
-it('creates action test in nested path with pest', function () {
+it('creates action test in nested path with pest', function (): void {
     $this->artisan('make:action Path/NameAction --pest')
         ->assertSuccessful();
 
@@ -36,10 +36,10 @@ it('creates action test in nested path with pest', function () {
     $contents = File::get($path);
 
     expect($contents)
-        ->toContain('test(\'');
+        ->toContain("test('");
 });
 
-it('creates action test in nested path with test', function () {
+it('creates action test in nested path with test', function (): void {
     $this->artisan('make:action Path/NameAction --test')
         ->assertSuccessful();
 

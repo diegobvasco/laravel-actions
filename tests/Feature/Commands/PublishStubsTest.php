@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\File;
 
-it('publishes action stub', function () {
+it('publishes action stub', function (): void {
     $publishedPath = base_path('stubs/action.stub');
 
     File::delete($publishedPath);

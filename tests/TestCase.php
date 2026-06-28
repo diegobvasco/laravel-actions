@@ -15,7 +15,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Dvws\\LaravelActions\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName): string => 'Dvws\\LaravelActions\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
@@ -26,7 +26,7 @@ class TestCase extends Orchestra
         ];
     }
 
-    public function getEnvironmentSetUp($app)
+    protected function getEnvironmentSetUp($app)
     {
         config()->set('database.default', 'testing');
 
