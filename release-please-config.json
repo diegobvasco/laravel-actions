@@ -1,0 +1,5 @@
+{
+  "release-type": "php",
+  "include-component-in-tag": false,
+  "changelog-type": "default"
+}
